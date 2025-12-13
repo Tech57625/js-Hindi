@@ -1,37 +1,50 @@
-const name = "Raghav"
-const repoCount = 30
+// array 
 
-//console.log(name + repoCount + " Value");
+const myArr = [0, 1, 2, 3, 4, 5,"raghav"]
+const myHeros = ["profesor", "berlin"]
+const myArr2 = new Array(1,2,3,4)
 
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
-
-const gameName = new String("Raghav yadav")
-console.log(gameName[0]);
-console.log(gameName.__proto__);
-
-console.log(gameName.length);
-
-console.log(gameName.toUpperCase());
-console.log(gameName.charAt(3));
-console.log(gameName.indexOf('g'));
-
-const newString = gameName.substring(0,9)
-console.log(newString);
-
-const anotherString  = gameName.slice(-8, 4)
-console.log(anotherString);
-
-const newStringOne = "    raghav    "
-
-console.log(newStringOne);
-console.log(newStringOne.trim());
-
-const url = "https://raghav.com/raghav%20yadav"
-
-console.log(url.replace('%20', '-'));
+console.log(myArr[1]);
+console.log(myHeros);
+console.log(myArr2);
 
 
-console.log(url.includes('raghav'));
+// Arrayn methods
+
+myArr.push(6)
+myArr.push(7)
+myArr.pop()
+console.log(myArr);
+
+
+myArr.unshift(9)
+console.log(myArr);
+
+console.log(myArr.includes(9));
+console.log(myArr.indexOf(9));
+
+
+const newArr = myArr.join()
+
+console.log(myArr);
+console.log(newArr);
+console.log(typeof newArr);
+
+// slice, splice
+
+console.log("A", myArr);
+
+
+const myn1 = myArr.slice(1, 3)
+
+console.log(myn1);
+console.log("B", myArr);
+
+const myn2  = myArr.splice(1, 3)
+
+console.log("C", myArr);
+console.log(myn2);
+
 
 
 
